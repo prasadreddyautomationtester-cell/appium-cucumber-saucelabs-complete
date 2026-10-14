@@ -17,8 +17,11 @@ public class DriverFactory {
 
     public static void initializeDriver() throws Exception {
 
-        String username = ConfigReader.getProperty("sauce.username");
-        String accessKey = ConfigReader.getProperty("sauce.accesskey");
+        String username = System.getenv("SAUCE_USERNAME");
+        String accessKey = System.getenv("SAUCE_ACCESS_KEY");
+
+//        String username = ConfigReader.getProperty("sauce.username");
+//        String accessKey = ConfigReader.getProperty("sauce.accesskey");
 
         System.out.println("Username = " + username);
         System.out.println("Access Key = " + accessKey);
