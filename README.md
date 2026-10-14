@@ -1,0 +1,1 @@
+Set SAUCE_USERNAME and SAUCE_ACCESS_KEY. Upload ApiDemos.apk to Sauce storage. Run mvn test.
